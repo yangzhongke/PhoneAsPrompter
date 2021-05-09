@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title></title>
+    <script src="axios.js"></script>
+</head>
+<body>
+    <button id="btnPlay" onclick="play()">Play</button>
+    <button id="btnPause" onclick="pause()">Pause</button>
+    <input type="range" min="1" max="100" value="100" id="range1" onchange="range1Change(this.value)" />
+    <script type="text/javascript">
+        function range1Change(value) {
+            axios.post('/setVolume?value=' + value);
+        }
+        function play() {
+            axios.post('/play');
+        }
+        function pause() {
+            axios.post('/pause');
+        }
+    </script>
+</body>
+</html>

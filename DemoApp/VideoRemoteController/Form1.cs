@@ -60,12 +60,28 @@ namespace VideoRemoteController
                 var request = context.Request;
                 var response = context.Response;
                 string path = request.Path.Value;
-                if (path == "/report")
+                if (path == "/play")
                 {
                     response.StatusCode = 200;
-                    string value = request.Query["value"];
                     this.BeginInvoke(new Action(() => {
-                        
+                        mediaPlayer.Play();
+                    }));
+                    await response.WriteAsync("OK");
+                }
+                else if (path == "/pause")
+                {
+                    response.StatusCode = 200;
+                    this.BeginInvoke(new Action(() => {
+                        mediaPlayer.Pause();
+                    }));
+                    await response.WriteAsync("OK");
+                }
+                else if (path == "/setVolume")
+                {
+                    response.StatusCode = 200;
+                    int value = Convert.ToInt32(request.Query["value"]);
+                    this.BeginInvoke(new Action(() => {
+                        mediaPlayer.Volume= value;
                     }));
                     await response.WriteAsync("OK");
                 }
