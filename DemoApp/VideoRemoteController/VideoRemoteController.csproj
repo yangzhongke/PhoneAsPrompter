@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp.WinForms" Version="3.5.0" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.12" />
+	  <PackageReference Include="Microsoft.AspNetCore.Owin" Version="5.0.5" />
+	  <PackageReference Include="SkiaSharp.QrCode" Version="0.4.1" />
+  </ItemGroup>
+
+</Project>

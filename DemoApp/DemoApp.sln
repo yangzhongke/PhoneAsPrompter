@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoWPFApp", "DemoWPFApp\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWinFormApp", "DemoWinFormApp\DemoWinFormApp.csproj", "{E5631647-B95D-4489-B1F2-AF2D8B9FC4CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRemoteController", "VideoRemoteController\VideoRemoteController.csproj", "{3DC8DF2F-3202-4510-B21D-C87F6727896E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E5631647-B95D-4489-B1F2-AF2D8B9FC4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5631647-B95D-4489-B1F2-AF2D8B9FC4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5631647-B95D-4489-B1F2-AF2D8B9FC4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
