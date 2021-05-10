@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWinFormApp", "DemoWinFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRemoteController", "VideoRemoteController\VideoRemoteController.csproj", "{3DC8DF2F-3202-4510-B21D-C87F6727896E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneAsPrompter", "PhoneAsPrompter\PhoneAsPrompter.csproj", "{C047888C-FD7C-45F3-BA5E-2C77A040B0D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DC8DF2F-3202-4510-B21D-C87F6727896E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C047888C-FD7C-45F3-BA5E-2C77A040B0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C047888C-FD7C-45F3-BA5E-2C77A040B0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C047888C-FD7C-45F3-BA5E-2C77A040B0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C047888C-FD7C-45F3-BA5E-2C77A040B0D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

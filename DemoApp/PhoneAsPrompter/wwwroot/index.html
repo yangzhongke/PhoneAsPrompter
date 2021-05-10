@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title></title>
+    <script src="axios.js"></script>
+</head>
+<body>
+    <div id="divNote">
+
+    </div>
+    <script type="text/javascript">
+        setInterval(function () {
+            axios.post("/getNote").then(function (resp) {
+                document.getElementById("divNote").innerHTML =resp.data;
+            });
+        }, 300);
+    </script>
+</body>
+</html>
