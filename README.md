@@ -1,7 +1,7 @@
 # PhoneAsPrompter
 Use your phone as a free teleprompter and clicker, which can connect to PowerPoint.
 
-[Windows Download](https://github.com/yangzhongke/PhoneAsPrompter/blob/main/PhoneAsPrompter_winx86.zip)
+[Windows Download](https://github.com/yangzhongke/PhoneAsPrompter/raw/main/PhoneAsPrompter_winx86.zip)
 
 Step one:
 Your phone and your computer should be in a same network.
