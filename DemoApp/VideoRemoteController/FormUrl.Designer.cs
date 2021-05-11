@@ -60,7 +60,10 @@ namespace VideoRemoteController
             this.ClientSize = new System.Drawing.Size(517, 361);
             this.Controls.Add(this.imgQRCode);
             this.Controls.Add(this.labelUrl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormUrl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUrl";
             this.Load += new System.EventHandler(this.FormUrl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgQRCode)).EndInit();

@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace VideoRemoteController
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         private LibVLC libVLC;
         private MediaPlayer mediaPlayer;
         private IWebHost host;
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
 
@@ -95,7 +95,7 @@ namespace VideoRemoteController
         private void MiShowUrl_Click(object sender, System.EventArgs e)
         {
             FormUrl form = new FormUrl();
-            form.ShowDialog();
+            form.ShowDialog(this);
         }
 
         private void MiOpen_Click(object sender, System.EventArgs e)

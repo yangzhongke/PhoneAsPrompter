@@ -7,19 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Zack.ComObjectHelpers" Version="1.0.1" />
+    <PackageReference Include="Zack.ComObjectHelpers" Version="1.0.2" />
 	  <PackageReference Include="Microsoft.AspNetCore.Owin" Version="5.0.5" />
 	  <PackageReference Include="SkiaSharp.QrCode" Version="0.4.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="FormUrl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="wwwroot\axios.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\hammer.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="wwwroot\index.html">

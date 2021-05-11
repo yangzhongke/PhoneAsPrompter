@@ -7,9 +7,10 @@
     <meta name="renderer" content="webkit" />
     <title></title>
     <script src="axios.js"></script>
+    <script src="hammer.min.js"></script>
 </head>
 <body>
-    <div id="divNote">
+    <div id="divNote" style="width:100vw;height:100vh;">
 
     </div>
     <script type="text/javascript">
@@ -18,6 +19,13 @@
                 document.getElementById("divNote").innerHTML =resp.data;
             });
         }, 300);
+        var hammer = new Hammer(document.getElementById("divNote"));
+        hammer.on("swipeleft", function () {
+            axios.post("/next");
+        });
+        hammer.on("swiperight", function () {
+            axios.post("/previous");
+        });
     </script>
 </body>
 </html>

@@ -61,13 +61,12 @@
   <data name="miOpen.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFVSURBVDhPlZO9SgNBFIXnCcQnkLyA4CP4DtZCuhQ22sZG
-        S0vLiEUCgloIViFaiBiJWhgkBBdCyGrADZqQXXV/ynHOzUwyZnZkHTiwO5z7zbl3dtn8CsNwJY7jpyRJ
-        8nIr+5LFwcZBnd87bzwzRBhzQqtRFG0KAF/eOuML65VsEFFURhFUe3RJp/UOARREeHak3VwoLF20yczW
-        Dg0tFY4JjnRIKZWT5ROAfhreB6Ng2sZts8Xfn2vc95ypwq8xgGUCOP0hnbR99EDFkD6DUe+Od6vFX3q9
-        2ScfJVEJAEHveFe3oIC6kAAQPFMCxGm0XYLoKWzSAZgHw4Z7tUcbgKk+bRp2rgmAZ9QQQBHT+rWpd7lr
-        AjCceaNNg9b55CYU4PPDNUx/6XvszWaADa95Yphs6jdKXPw3L3QLInqAYvSUZk4TZoUvkwAiRh4QzOA/
-        8n1/kTHGfgAPl7J7IvOdHAAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhP7czBCoAwCIBhn80nifnq1cVDddHjQtogtjbb
+        NRJ+BuI+yCMi0UtVp3Rejx0gYjMiiszcRjKwb0eV7UOgPuIBy7z2EQ+w947Yffp6jQeUDQFlP/B94G2P
+        wGgAACcYuZjJw4fhNwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>127</value>
+  </metadata>
 </root>
