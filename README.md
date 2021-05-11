@@ -3,8 +3,8 @@ Use your phone as a free teleprompter and clicker, which can connect to PowerPoi
 
 [Windows Download](https://github.com/yangzhongke/PhoneAsPrompter/raw/main/PhoneAsPrompter_winx86.zip)
 
-Step one:
-Your phone and your computer should be in a same network.
+## Step one: ##
+Your phone and your computer should be in the same network.
 
 Step two:
 Start Pc-Side application, click "File"--"Open" to open a PowerPoint file.

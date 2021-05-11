@@ -10,10 +10,7 @@
 		<PackageReference Include="SkiaSharp.QrCode" Version="0.4.1" />
 	</ItemGroup>
 	<ItemGroup>
-	  <None Update="wwwroot\axios.js">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="wwwroot\index.html">
+	  <None Update="wwwroot\**">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
