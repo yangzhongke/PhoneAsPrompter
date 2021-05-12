@@ -24,15 +24,21 @@ namespace VideoRemoteController
             /*NuGet: LibVLCSharp.WinForms、VideoLAN.LibVLC.Windows 
              */
             Core.Initialize();
+
             this.libVLC = new LibVLC();
             this.mediaPlayer = new MediaPlayer(libVLC);
+            this.mediaPlayer.Buffering += MediaPlayer_Buffering;
+            this.mediaPlayer.EncounteredError += MediaPlayer_EncounteredError;
 
             VideoView videoView = new VideoView();
             videoView.Dock = DockStyle.Fill;
             this.Controls.Add(videoView);
 
             videoView.MediaPlayer = mediaPlayer;
-            mediaPlayer.Play(new Media(libVLC, @"F:\珍贵音频视频\缝纫机乐队 不再犹豫.mp4"));
+            /*
+            mediaPlayer.Play(new Media(libVLC, @"F:\珍贵音频视频\缝纫机乐队 不再犹豫.mp4"));*/
+            //http://www.caiyawang.com/thread-303-1-1.html
+            mediaPlayer.Play(new Media(libVLC, @"http://111.12.102.68:6610/PLTV/77777777/224/3221225674/index.m3u8?CCTV-1蓝光2", FromType.FromLocation));
 
             host = new WebHostBuilder()
                .UseKestrel()
@@ -41,6 +47,20 @@ namespace VideoRemoteController
                .Build();
             host.RunAsync();
             this.Closed += Form1_Closed;
+        }
+
+        private void MediaPlayer_EncounteredError(object sender, EventArgs e)
+        {
+            MessageBox.Show("Error");
+        }
+
+        private void MediaPlayer_Buffering(object sender, MediaPlayerBufferingEventArgs e)
+        {
+            this.toolStripStatusLabel1.Text = "Buffering:"+e.Cache;
+            if(e.Cache==100)
+            {
+                this.toolStripStatusLabel1.Text = "OK";
+            }
         }
 
         private void Form1_Closed(object sender, EventArgs e)
