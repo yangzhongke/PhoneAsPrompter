@@ -70,6 +70,7 @@ namespace PhoneAsPrompter
                 var request = context.Request;
                 var response = context.Response;
                 string path = request.Path.Value;
+                bool hasRun = true;
                 if (path == "/getNote")
                 {
                     response.StatusCode = 200;
@@ -100,9 +101,25 @@ namespace PhoneAsPrompter
                         {
                             return;
                         }
-                        T(T(this.presentation.SlideShowWindow).View).Next();
+                        try
+                        {
+                            T(T(this.presentation.SlideShowWindow).View).Next();
+                            hasRun = true;
+                        }
+                        catch(COMException e)
+                        {
+                            hasRun = false;
+                        }
+                        
                     }));
-                    await response.WriteAsync("OK");
+                    if (hasRun)
+                    {
+                        await response.WriteAsync("OK");
+                    }
+                    else
+                    {
+                        await response.WriteAsync("NO");
+                    }
                 }
                 else if (path == "/previous")
                 {
@@ -112,9 +129,25 @@ namespace PhoneAsPrompter
                         {
                             return;
                         }
-                        T(T(this.presentation.SlideShowWindow).View).Previous();
+                        try
+                        {
+                            T(T(this.presentation.SlideShowWindow).View).Previous();
+                            hasRun = true;
+                        }
+                        catch (COMException e)
+                        {
+                            hasRun = false;
+                        }
                     }));
-                    await response.WriteAsync("OK");
+                    if (hasRun)
+                    {
+                        await response.WriteAsync("OK");
+                    }
+                    else
+                    {
+                        await response.WriteAsync("NO");
+                    }
+                    
                 }
                 else
                 {
