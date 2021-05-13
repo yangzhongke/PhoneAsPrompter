@@ -14,17 +14,28 @@
 
     </div>
     <script type="text/javascript">
-        setInterval(function () {
+        const note = document.querySelector("#divNote");
+        let getNote = setInterval(function () {
             axios.post("/getNote").then(function (resp) {
-                document.getElementById("divNote").innerHTML =resp.data;
+                note.innerText =resp.data;
             });
         }, 300);
-        var hammer = new Hammer(document.getElementById("divNote"));
+        var hammer = new Hammer(note);
         hammer.on("swipeleft", function () {
-            axios.post("/next");
+            axios.post("/next").then((text) => {
+                if (text.data == 'NO') {
+                    note.innerText = '幻灯片播放结束！'
+                    clearInterval(getNote)
+                }
+            });
         });
         hammer.on("swiperight", function () {
-            axios.post("/previous");
+            axios.post("/previous").then((text) => {
+                if (text.data == 'NO') {
+                    note.innerText = '幻灯片播放结束！'
+                    clearInterval(getNote)
+                }
+            });
         });
     </script>
 </body>
